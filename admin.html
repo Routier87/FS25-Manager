@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administration - FS25 Manager</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        <i class="fa-solid fa-user-shield"></i>
+        Panel Administrateur
+    </h1>
+
+</header>
+
+<!-- Connexion -->
+
+<section id="login">
+
+    <div class="login-box">
+
+        <h2>Connexion Administrateur</h2>
+
+        <input
+        type="text"
+        id="username"
+        placeholder="Identifiant">
+
+        <input
+        type="password"
+        id="password"
+        placeholder="Mot de passe">
+
+        <button onclick="login()">
+            Se connecter
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Panel -->
+
+<section id="adminPanel" style="display:none;">
+
+    <h2>Gestion des Maps</h2>
+
+    <div class="actions">
+
+        <button onclick="ajouterMap()">
+            ➕ Ajouter une map
+        </button>
+
+        <button onclick="modifierMap()">
+            ✏ Modifier une map
+        </button>
+
+        <button onclick="supprimerMap()">
+            🗑 Supprimer une map
+        </button>
+
+    </div>
+
+    <hr>
+
+    <h2>Gestion du Site</h2>
+
+    <div class="actions">
+
+        <button onclick="changerIdentifiant()">
+            👤 Modifier l'identifiant
+        </button>
+
+        <button onclick="changerMotDePasse()">
+            🔒 Modifier le mot de passe
+        </button>
+
+        <button onclick="sauvegarder()">
+            💾 Sauvegarder
+        </button>
+
+    </div>
+
+    <hr>
+
+    <h2>Configuration d'une map</h2>
+
+    <input
+    type="text"
+    placeholder="Nom de la map">
+
+    <input
+    type="number"
+    placeholder="Argent de départ">
+
+    <input
+    type="file">
+
+    <br><br>
+
+    <h3>Animaux</h3>
+
+    <label><input type="checkbox"> Vaches</label><br>
+    <label><input type="checkbox"> Moutons</label><br>
+    <label><input type="checkbox"> Poules</label><br>
+    <label><input type="checkbox"> Cochons</label><br>
+    <label><input type="checkbox"> Chevaux</label><br>
+
+    <br>
+
+    <h3>Activités</h3>
+
+    <label><input type="checkbox"> Élevage</label><br>
+    <label><input type="checkbox"> Travaux agricoles</label><br>
+    <label><input type="checkbox"> Sylviculture</label><br>
+    <label><input type="checkbox"> Production</label><br>
+    <label><input type="checkbox"> Carrière</label><br>
+
+    <br>
+
+    <h3>Mode de jeu</h3>
+
+    <label><input type="radio" name="mode"> Solo</label>
+    <label><input type="radio" name="mode"> Multijoueur</label>
+
+    <br><br>
+
+    <button>
+        💾 Enregistrer la map
+    </button>
+
+</section>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
