@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FS25 Manager - Map</title>
+
+    <link rel="stylesheet" href="map.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <a href="index.html" class="back">
+        <i class="fa-solid fa-arrow-left"></i>
+        Retour
+    </a>
+
+    <h1 id="nomMap">
+        Nom de la Map
+    </h1>
+
+</header>
+
+<main>
+
+    <!-- Image -->
+
+    <section class="image-map">
+
+        <img id="imageMap"
+        src="images/map.jpg"
+        alt="Map">
+
+    </section>
+
+    <!-- Argent -->
+
+    <section class="argent">
+
+        <h2>💰 Argent</h2>
+
+        <h1 id="argentMap">
+
+            20 000 €
+
+        </h1>
+
+    </section>
+
+    <!-- Calculatrice -->
+
+    <section class="calculatrice">
+
+        <h2>Calculatrice</h2>
+
+        <input
+        type="number"
+        id="montant"
+        placeholder="Montant">
+
+        <button onclick="ajouterArgent()">
+
+            ➕
+
+            Ajouter
+
+        </button>
+
+        <button onclick="retirerArgent()">
+
+            ➖
+
+            Retirer
+
+        </button>
+
+    </section>
+
+    <!-- Activités -->
+
+    <section class="activites">
+
+        <h2>Activités</h2>
+
+        <label><input type="checkbox"> Élevage</label>
+
+        <label><input type="checkbox"> Travaux agricoles</label>
+
+        <label><input type="checkbox"> Sylviculture</label>
+
+        <label><input type="checkbox"> Production</label>
+
+        <label><input type="checkbox"> Carrière</label>
+
+    </section>
+
+    <!-- Animaux -->
+
+    <section class="animaux">
+
+        <h2>Animaux</h2>
+
+        <label><input type="checkbox"> 🐄 Vaches</label>
+
+        <label><input type="checkbox"> 🐑 Moutons</label>
+
+        <label><input type="checkbox"> 🐔 Poules</label>
+
+        <label><input type="checkbox"> 🐖 Cochons</label>
+
+        <label><input type="checkbox"> 🐎 Chevaux</label>
+
+    </section>
+
+    <!-- Notes -->
+
+    <section class="notes">
+
+        <h2>Notes</h2>
+
+        <textarea
+        id="notes"
+        placeholder="Écris tes notes ici..."></textarea>
+
+    </section>
+
+    <!-- Champs -->
+
+    <section class="champs">
+
+        <h2>Liste des champs</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Champ</th>
+
+                    <th>Travail</th>
+
+                    <th>Statut</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="listeChamps">
+
+                <tr>
+
+                    <td>22</td>
+
+                    <td>Récolter</td>
+
+                    <td>🟠</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <button>
+
+            ➕ Ajouter un champ
+
+        </button>
+
+    </section>
+
+</main>
+
+<script src="map.js"></script>
+
+</body>
+
+</html>
